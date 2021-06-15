@@ -3,7 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+@media (max-width: 560px) {
+  .match {
+    max-width: 100%;
+  }
+  .match .text {
+    font-size: 30px;
+  }
+  button {
+    padding: 5px;
+    margin-left: 10px;
+    width: 85px;
+    height: 33px;
+    color: #eee;
+    background: none;
+    border: none;
+    background-color: rgb(45, 117, 96);
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: capitalize;
+    transition-duration: 0.13s;
+  }
+  .hands {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .hands img {
+    max-width: 50%;
+  }
+}
 section {
   background-color: #262a43;
   height: 100vh;
@@ -40,18 +68,24 @@ section {
   font-size: 45px;
   text-transform: capitalize;
 }
-.intro button,
-.match button {
-  color: #eee;
-  background: none;
-  border: none;
-  background-color: rgb(45, 117, 96);
-  width: 150px;
-  height: 50px;
-  border-radius: 5px;
-  font-size: 20px;
-  text-transform: capitalize;
-  transition-duration: 0.13s;
+
+@media (min-width: 561px) {
+  .intro button,
+  .match button {
+    color: #eee;
+    background: none;
+    border: none;
+    background-color: rgb(45, 117, 96);
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition-duration: 0.13s;
+  }
+  .match .text {
+    font-size: 50px;
+  }
 }
 .intro button:hover,
 .match button:hover {
@@ -70,7 +104,6 @@ section {
 .match .text {
   text-align: center;
   color: rgb(136, 171, 190);
-  font-size: 50px;
   text-transform: capitalize;
 }
 .match .hands {
